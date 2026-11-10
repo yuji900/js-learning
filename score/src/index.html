@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>点数</title>
+</head>
+
+<body>
+    <h1>テストの点数集計</h1>
+    <table>
+        <tr>
+            <th>教科</th>
+            <th>点数</th>
+            <th>判定</th>
+        </tr>
+        <tr>
+            <td>国語</td>
+            <td><input value="0" type="number" id="score0">点</td>
+            <td id="result0">-</td>
+        </tr>
+        <tr>
+            <td>数学</td>
+            <td><input value="0" type="number" id="score1">点</td>
+            <td id="result1">-</td>
+        </tr>
+        <tr>
+            <td>英語</td>
+            <td><input value="0" type="number" id="score2">点</td>
+            <td id="result2">-</td>
+        </tr>
+    </table>
+
+    <p id="errorMessage"></p>
+    <button id="calcButton">集計</button>
+    <p>合計：<span id="sumPoint">-</span>点  平均：<span id="averagePoint">-</span>点</p>
+    <script src="script.js"></script>
+</body>
+
+</html>
